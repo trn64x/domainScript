@@ -9,7 +9,7 @@ const [active, setActive] = useState("About me");
         <>
         <header>
             <div id="logo">mpotrz.pl</div>
-            <div id="socials"><img id="link" src={logo}></img><img id="gmail" src= {gmail}></img><img id="github" src= {github}></img> </div>
+            <div id="socials"><a href="https://www.linkedin.com/in/maciekp-potrz-ba6a0b308/"><img id="link" src={logo}></img></a><a href="mailto:maciekp371@gmail.com"><img id="gmail" src= {gmail}></img></a><a href="https://github.com/trn64x"><img id="github" src= {github}></img></a> </div>
             <div id="options">
             <a href="#root" className={ active === "About me" ? "active" : ""} onClick={() => {setActive("About me");}} >About me</a>
             <a href="#Portfolio" className = {active === "My Work" ? "active" : ""} onClick={() => setActive("My Work")} >My work</a>
