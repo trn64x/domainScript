@@ -11,17 +11,15 @@
     font-style: normal;
   }
   .container{
-    height:100%;
     width:50%;
     display:flex;flex-direction: column;
   }
   #port{
-    height:35%;
+    height:30%;
     width:100%;
     display:flex;
     font-weight:900;
     align-self: center;
-    padding:100px;
     justify-self: center;
     text-align: center;
     justify-content: center;
@@ -31,12 +29,13 @@ color:#00FF99
   }
 #About{z-index:-1;
     padding-top:50px;
-    width:100%;
+    width:calc(100% - 10px);
     display: flex;
     align-self: center;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background:linear-gradient(to right, #000, #070707)
 }
 .headline{
 display:flex;
@@ -65,16 +64,17 @@ font-weight:900;
 .left{
     font-size:100px;
     height:calc(100% - 40px);
-    width:45%;
+    width:50%;
     font-weight:200;
     color:#00FF99;
     rotate:0deg;
-    line-height: 2;
+    line-height: 2.5;
     padding-left:10px;
-    margin:10px;
+    margin-top:20px;
+    margin-bottom:20px;
     font-family:"PixelFont";
     letter-spacing: 5px;
-    background: rgba( 20,20,20, 1 );
+    background:linear-gradient(to right, #0c0c0c, #070707);
 box-shadow: 0 8px 32px 0 rgb(0, 77, 45);
 border-radius: 10px;
 border: 1px solid rgba( 20,20,20, 1 );
@@ -124,6 +124,8 @@ border: 1px solid rgba( 20,20,20, 1 );
     background:none;
 }
 ul{
+    line-height:2;
+    margin:25px;
     margin-block-start: 10px;
     margin-block-end:10px;
 }
@@ -144,6 +146,8 @@ li{
 
 }
 #bef{
+    margin:20px;
+    line-height: 2;
     text-shadow: none !important;
     padding: 0 !important;
     font-family:"Poppins";
@@ -155,7 +159,7 @@ li{
 }
 .right{
     font-size:80px;
-    height:65%;
+    height:70%;
     width:100%;
     font-weight:200;
     color:#00FF99;
@@ -203,14 +207,16 @@ height:auto;
         font-size:25px;
     }
     .right{
-width:calc(100% - 32px);
+        padding:0;
+width:calc(100% - 15px);
 font-size:30px;
 height:100%;
 border:none;
     }
     .left{
+        padding:0;
+        width:calc(100% - 2px);
         font-size:65px;
-        width:calc(100% - 32px)
     }
     .left p{
         font-size:15px;
@@ -243,10 +249,10 @@ border:none;
     }
     .right{
     border:none;
-width:calc(100% - 32px);
+width:calc(100% - 2px);
     }
     .left{
-        width:calc(100% - 32px)
+        width:calc(100% - 2px)
     }
 }
 @media only screen and (max-width:500px) {

@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20vh;
+    width:calc(100% - 15px);
+    background:rgb(10,10,10);
+}
+p{
+    min-width:0;
+    font-size:30px;
+
+}

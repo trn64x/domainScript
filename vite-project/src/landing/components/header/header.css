@@ -14,13 +14,14 @@ body{
     align-items:flex-start;
     justify-content:center;
     flex-direction: column;
-    
+    background:linear-gradient(to right, #000, #070707);
+    z-index:1
 }
 header {
-    z-index:999;
+    z-index:10;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 1);
     position: sticky;
-    top: 20px; /* Sticky powinno działać poprawnie */
+    top: 20px; 
     height: 75px;
     display: flex;
     align-items: center;
@@ -28,7 +29,7 @@ header {
     width: 900px;
     background: rgb(12, 12, 12);
     border-radius: 20px;
-    margin: 0 auto; /* Centrowanie */
+    margin: 0 auto;
 }
 
 #logo,#options{

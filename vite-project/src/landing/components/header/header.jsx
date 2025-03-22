@@ -13,7 +13,7 @@ const [active, setActive] = useState("About me");
             <div id="options">
             <a href="#root" className={ active === "About me" ? "active" : ""} onClick={() => {setActive("About me");}} >About me</a>
             <a href="#Portfolio" className = {active === "My Work" ? "active" : ""} onClick={() => setActive("My Work")} >My work</a>
-            <a href="#ComingSoon" className = {active === "Blog" ? "active" : ""} onClick={() => setActive("Blog")} >Blog</a></div>
+            <a href="#Blog" className = {active === "Blog" ? "active" : ""} onClick={() => setActive("Blog")} >Blog</a></div>
         </header>
         </>
     );

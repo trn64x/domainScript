@@ -1,5 +1,6 @@
 import '../App.css'
 import MyWork from './components/Portfolio/MyWork';
+import Footer from './components/footer/Footer';
 import Blogsite from './components/Blog/Blog';
 import  Header from './components/header/header';
 import { motion, useScroll,} from "motion/react"; // eslint-disable-line no-unused-vars
@@ -18,7 +19,7 @@ return(
 <hr></hr>
 <MyWork/>
 <Blogsite></Blogsite>
-
+<Footer></Footer>
 </>
 );
 };

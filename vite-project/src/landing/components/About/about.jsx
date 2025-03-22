@@ -33,7 +33,7 @@ export default function About(){
                     <p id="bef">Im super happy to be in place where I am now, and for 2 years of programming i managed to achieve:</p>
                     <ul>
                     <li><p>Hours of programming: <span id="highlight">500+</span></p></li>
-                    <li><p>Expierienced: <span id="highlight">15+</span>languages</p></li>
+                    <li><p>Experienced: <span id="highlight">15+</span>languages</p></li>
                     <li><p>Projects Completed: <span id="highlight">41</span></p></li>
                     <li><p>Syntax errors: <span id="highlight">[Integer out of range]</span></p></li>
                     </ul>
