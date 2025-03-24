@@ -5,6 +5,12 @@ import { motion, useScroll,} from "motion/react"; // eslint-disable-line no-unus
 export default function MyWork() {
     let projects = [
         {
+            name: "Blackjack React 🇬🇧",
+            date: "2025-03-25",
+            language:"React",
+            link:"https://blackjack.mpotrz.pl"
+        },
+        {
             name: "Bootstrap Project 🇵🇱",
             date: "2024-12-28",
             language: "JavaScript",

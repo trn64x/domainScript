@@ -45,14 +45,13 @@ background:linear-gradient(to right, #000, #070707)
     flex-direction:row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 .item{
     cursor:pointer;
     display:flex;
     flex-direction: row;
     font-family:"poppins";
-    width:45%;
+    width:calc(50% - 39px);
     height:300px;
     padding-left:10px;
     margin:10px;
