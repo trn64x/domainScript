@@ -11,8 +11,9 @@
     font-style: normal;
   }
   .container{
-    width:49%;
+    width:calc(50% - 44px);
     display:flex;flex-direction: column;
+    margin:20px;
     
   }
   #port{
@@ -68,14 +69,18 @@ font-weight:900;
     width:100pX;
 }
 #underline{
+    display:flex;
+    justify-content: center;
     text-decoration: underline;
     text-decoration-thickness: 20px;
     text-underline-offset: 25px;
     z-index: 99;
     width:100%;
+    transition: 0.5s ease-in-out;
 }
 #underline:hover{
-    
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 .about{
     display:flex;
@@ -189,12 +194,11 @@ li{
 .right{
     font-size:80px;
     height:100%;
-    width:calc(100% - 44px);
+    width:100%;
     font-weight:200;
     color:#00FF99;
     rotate:0deg;
     line-height: 2;
-    margin:20px;
     font-family:"PixelFont";
     letter-spacing: 5px;
     border:2px solid rgb(20,20,20);
@@ -289,7 +293,6 @@ border:none;
     }
     .about{
         display:flex;
-        flex-direction: column-reverse;
     }
     #port{
         display:none;
@@ -324,6 +327,17 @@ border:none;
     .right p{
         font-size:15px;
         letter-spacing: 1px;
+    }
+    #underline{
+        text-underline-offset: 15px;
+        text-decoration-thickness: 10px;
+    }
+}
+@media only screen and (max-width:500px){
+    #underline{
+        font-size:30px;
+        text-underline-offset: 15px;
+        text-decoration-thickness: 10px;
     }
 }
 @media only screen and (min-width:1000px) and (max-width:1570px){

@@ -37,7 +37,7 @@ export default function About(){
                 </div>
                 <div className="container">
                 <div className="right">
-                    <p id="bef">Im super happy to be in place where I am now, and for 2 years of programming i managed to achieve:</p>
+                    <p id="bef">I'm super happy to be where I am now, and for 2 years of programming I have managed to achieve:</p>
                     <ul>
                     <li><p>Hours of programming: <span id="highlight">500+</span></p></li>
                     <li><p>Experienced: <span id="highlight">15+</span>languages</p></li>

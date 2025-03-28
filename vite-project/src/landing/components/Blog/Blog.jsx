@@ -14,7 +14,7 @@ return(
     }
     
     viewport={{root:ref}}>
-    <div class="Blog">#BLOG</div>
+    <div className="Blog">#BLOG</div>
     <div className="fluid">
         <div className="coming">
         <img src={ NotFound }></img>
