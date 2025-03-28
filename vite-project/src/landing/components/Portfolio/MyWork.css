@@ -5,9 +5,14 @@
     font-style: normal;
   }
 #Portfolio{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin:0;
+    width:100%;
     min-height:100vh;
-    width:calc(100vw - 15px);
 background:linear-gradient(to right, #000, #070707)
 }
 .pages{
@@ -45,26 +50,28 @@ background:linear-gradient(to right, #000, #070707)
     flex-direction:row;
     flex-wrap: wrap;
     align-items: center;
+
 }
 .item{
     cursor:pointer;
     display:flex;
     flex-direction: row;
     font-family:"poppins";
-    width:calc(50% - 39px);
+    width:calc(50% - 54px);
     height:300px;
-    padding-left:10px;
-    margin:10px;
+    margin:25px;
     background: linear-gradient(145deg, #080808, #0e0e0e);
 
 border-radius: 10px;
 border: 2px solid #00FF99;
+transition:0.5s ease-in-out;
 }
 .item:hover{
     transform: scale(1.05);
     box-shadow: 0 8px 32px 0 rgba(0, 255, 149, 1);
 border-radius: 10px;
 border: 2px solid rgb(0, 255, 136);
+transition:0.5s ease-in-out;
 }
 .l{
     display:flex;
@@ -101,7 +108,7 @@ p img{
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     box-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
 }
 .r button:hover{
@@ -109,6 +116,7 @@ p img{
     
     box-shadow: 0 0 20px rgb(0, 100, 50);
     transform: scale(1.05);
+    transition:0.5s ease-in-out !important
 }
 button a:hover{
     color: #000 !important;
@@ -190,8 +198,15 @@ option{
     }
 }
 @media only screen and (max-width: 1000px){
+
     #a3{
         display:none;
+    }
+    #Portfolio{
+        width:100%;
+    }
+    #flex{
+        width:100%;
     }
     .item{
         display:flex;

@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import './MyWork.css';
 import { motion, useScroll,} from "motion/react"; // eslint-disable-line no-unused-vars
 export default function MyWork() {
@@ -7,32 +7,28 @@ export default function MyWork() {
         {
             name: "Blackjack React 🇬🇧",
             date: "2025-03-25",
-            language:"React",
+            language:"Javascript",
             link:"https://blackjack.mpotrz.pl"
         },
         {
-            name: "Bootstrap Project 🇵🇱",
-            date: "2024-12-28",
-            language: "JavaScript",
-            link: "https://trn64x.github.io/boots/boots.html"
+            name: "Object Doors",
+            date: "2025-03-26",
+            language:"Javascript",
+            link:"https://objectdoors.maciekp371.workers.dev"
         },
         {
-            name: "Christmas tree 🇵🇱",
-            date: "2024-02-14",
-            language: "HTML, CSS",
-            link: "https://trn64x.github.io/choinka/"
+            name:"Python Graph",
+            date: "2025-03-25",
+            language:"Python",
+            link:"https://github.com/trn64x/PythonGraph"
+
         },
         {
             name: "To Do App 🇬🇧",
             date: "2024-06-10",
-            language: "React",
+            language: "Javascript",
             link: "https://trn64x.github.io/to-do-List/todo.html"
-        },        {
-            name: "BlackJack 🇬🇧",
-            date: "2024-06-20",
-            language: "Python",
-            link: "https://github.com/trn64x/cardGame"
-        }
+        },
     ];
     const [search, setSearch] = useState("");
     const [sortOrder, setSortOrder] = useState("Newest");
@@ -47,16 +43,10 @@ export default function MyWork() {
             ? b.date.localeCompare(a.date)
             : a.date.localeCompare(b.date);
     });
+    const ref = useRef(null);
     return (
         
-        <motion.div id='Portfolio'
-        initial={{scale:0,visibility:"hidden"}}
-        transition={{duration:0.75, ease:[0,0.71,0.2,1.01]}}
-        whileInView={
-            {scale:1, visibility:"visible"}
-        }
-        
-        viewport={{once:true}}>
+       <div ref={ref} id="Portfolio">
             <div className="buttons">
                 <input
                     type="text"
@@ -69,7 +59,14 @@ export default function MyWork() {
                 </select>
             </div>
 
-            <div className="flex">
+             <motion.div className="flex"
+        initial={{scale:0.5,visibility:"hidden"}}
+        transition={{duration:0.75, ease:[0,0.71,0.2,1.01]}}
+        whileInView={
+            {scale:1, visibility:"visible"}
+        }
+        
+        viewport={{root: ref}}>
                 {filteredProjects.map((project, index) => (
                     <div key={index} className="item">
                         <div className="l">
@@ -80,7 +77,7 @@ export default function MyWork() {
                         <div className="r"><button> <a href= {project.link}>Project Link</a></button></div>
                     </div>
                 ))}
-            </div>
-        </motion.div>
+                </motion.div>
+        </div>
     );
 }

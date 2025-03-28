@@ -2,11 +2,12 @@ import arrow from "./arrow.svg";
 import './about.css';
 import { motion, useScroll,} from "motion/react"; // eslint-disable-line no-unused-vars
 import font from "../fonts/pixel.ttf";
+import {useRef} from 'react';
 export default function About(){
-    
+    const ref = useRef(null);
     return(
         <>
-        <section id="About">
+        <section ref={ref}id="About">
             <motion.div className='headline'
             initial={{scale:0,visibility:"hidden"}}
             transition={{duration:0.75, ease:[0,0.71,0.2,1.01]}}
@@ -14,7 +15,7 @@ export default function About(){
                 {scale:1, visibility:"visible"}
             }
             
-            viewport={{once:true}}><div>Welcome to my</div> <div style={{     paddingLeft: "20px",
+            viewport={{root:ref}}><div>Welcome to my</div> <div style={{     paddingLeft: "20px",
                 background: "linear-gradient(90deg, #39ff6e,#00ff9d)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
@@ -28,6 +29,12 @@ export default function About(){
             }
             
             viewport={{once:true}}>
+                <div className="left" style={{fontFamily: font, textShadow: "-9px 9px 0px rgb(0, 0, 0)",}}><div id="underline">&lt;Maciej Potrz&gt;</div>
+                    <p>
+                    I'm a 17-year-old programmer from Poland. I've been programming since 2023,
+                    </p>
+                    <p>mostly focusing on mobile apps, websites, and mathematical algorithms.</p>
+                </div>
                 <div className="container">
                 <div className="right">
                     <p id="bef">Im super happy to be in place where I am now, and for 2 years of programming i managed to achieve:</p>
@@ -38,15 +45,9 @@ export default function About(){
                     <li><p>Syntax errors: <span id="highlight">[Integer out of range]</span></p></li>
                     </ul>
                 </div>
-                <div id="port">My Portfolio <img id='arrow' src={arrow}></img></div>
+                
                 </div>
-                <div className="left" style={{fontFamily: font, textShadow: "-9px 9px 0px rgb(0, 0, 0)",}}>&lt;<span id="underline">Maciej Potrz</span>&gt;
-                    <p>
-                    I'm a 17-year-old programmer from Poland. I've been programming since 2023,
-                    </p>
-                    <p>mostly focusing on mobile apps, websites, and mathematical algorithms.</p>
-                    <p>I am super excited for new opportunities, and my goal is to learn React and Flutter </p>
-                </div>
+                <div id="port"><a id="strzalka" href="#Portfolio"><div id="mp">My Portfolio <img id='arrow' src={arrow}></img></div></a></div>
             </motion.div>
         </section>
         </>

@@ -6,7 +6,7 @@
   }
 .container-blog{
     background:linear-gradient(to right, #000, #070707);
-    width:calc(100vw - 15px);
+    width:calc(100vw - 30px);
     height:100vh;
     display:flex;
     justify-content: flex-start;
@@ -19,7 +19,7 @@ img{
     height:auto;
     object-fit: contain;
 }
-#Blog{
+.Blog{
     border-radius:10px 0 10px 0;
 width:100%;
 font-size:100px;
@@ -50,12 +50,12 @@ p{
     padding:20px;
 }
 @media only screen and (max-width:1000px){
-    #Blog{
+    .Blog{
         padding-top:150px;
     }
 }
 @media only screen and (max-height:750px){
-    #Blog{
+    .Blog{
         height:calc(20% - 150px)
     }
     .fluid{
@@ -63,7 +63,7 @@ p{
     }
 }
 @media only screen and (max-width:800px){
-    #Blog{
+    .Blog{
         display:flex;
 align-items: center;
 justify-content: center;
