@@ -173,6 +173,7 @@ li{
 }
 .right p {
     display:flex;
+    align-items: center;
     flex-direction: row;
     color:white;
     font-size:25px;
@@ -187,6 +188,9 @@ li{
     font-family:"Poppins";
 }
 #highlight{
+    display:flex;
+    justify-content: center;
+    align-items:center;
     padding-left:10px;
     padding-right:10px;
     color:#00FF99 !important;

@@ -40,16 +40,17 @@ background:linear-gradient(to right, #000, #070707)
 
 }
 .buttons{
+    width:25%;
+    padding:20px;
     flex-wrap:wrap;
     margin-top:30px;
     min-height:100vh;
-    width:30%;
 }
 .flex{
+    width:75%;
     margin-top:50px;
     margin-bottom: 50px;;
     min-width:0;
-    width:70%;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -57,19 +58,20 @@ background:linear-gradient(to right, #000, #070707)
 
 }
 .item{
+    padding:20px;
     cursor:pointer;
     display:flex;
     align-items:flex-start;
     justify-content: flex-start;
     flex-direction: column;
     font-family:"poppins";
-    width:calc(33% - 34px);
+    width:calc(33% - 74px);
     height:450px;
     margin:15px;
     background: linear-gradient(145deg, #080808, #0e0e0e);
 
 border-radius: 10px;
-border: 2px solid #00FF99;
+border: 2px solid rgb(20,20,20);
 transition:0.5s ease-in-out;
 }
 .item:hover{
@@ -105,13 +107,14 @@ p img{
 }
 .r button{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
     font-weight: bold;
     font-size: 14px;
     color: #00ff7f;
     background: rgba(0, 0, 0, 0.8);
     border: 2px solid #00ff7f;
     border-radius: 8px;
+    width:70%;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
@@ -142,10 +145,11 @@ button a:hover{
     display:flex;
     flex-direction: column;
     margin:20px;
+    
     padding:15px;
     border:2px solid rgb(20,20,20);
     width:calc(100% - 74px);
-    border-radius:25px;
+    border-radius:30px;
     min-height:0;
     transition: 0.5s ease-in-out;
 }
@@ -170,9 +174,10 @@ button a:hover{
 input{
     margin-left:20px;
     background: #111;
-    border: 2px solid #009b4d;
+    border: 2px solid rgb(20,20,20);
     color: white;
     padding: 10px;
+
     border-radius: 8px;
     width: calc(100% - 70px);
     transition: border 0.3s;
@@ -186,7 +191,7 @@ input:focus{
 }
 select{
     color:white;
-    border:2px solid #009b4d;
+    border: 2px solid rgb(20,20,20);
     border-radius:10px;
     height:35px;
     width:100%;
@@ -202,8 +207,9 @@ option{
     
 }
 #a1{
+    letter-spacing: 3px;
     font-size:35px;
-    line-height: 1.25;
+    line-height: normal;
     color:#00FF99;
     font-weight:900 !important;
 }
@@ -214,17 +220,20 @@ option{
     font-weight:600 !important;
 }
 #a2{
+    width:calc(100% - 20px);
+    display:flex;
+    justify-content: space-between;
     font-size:18px;
 }
 #a3{
     color:rgb(220,220,220);
 }
-@media only screen and  (min-width:1000px) and (max-width:1500px) {
+@media only screen and  (min-width:1000px) and (max-width:1580px) {
     .item{
         display:flex;
         margin:15px;
         height:400px;
-        width:calc(50% - 34px);
+        width:calc(50% - 74px);
     }
     .l #a1{
         font-size:25px !important;
@@ -251,7 +260,7 @@ option{
         flex-direction: column;
     }
     .buttons{
-        width:100%;
+        width:calc(100% - 40px);
         min-height:0;
     }
     .flex{
@@ -259,7 +268,7 @@ option{
     }
     .item{
         height:400px;
-        width:calc(50% - 34px);
+        width:calc(50% - 74px);
     }
 
     .l{
@@ -288,7 +297,7 @@ option{
 @media only screen and (max-width:700px){
     .item{
         height:400px;
-        width:calc(100% - 34px);
+        width:calc(100% - 74px);
     }
 
 .l{

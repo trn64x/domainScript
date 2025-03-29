@@ -78,7 +78,18 @@ a{
     font-weight:900;
     letter-spacing: 1px;
     text-decoration: none;
-    color:rgb(207, 207, 207)
+    color:rgb(207, 207, 207);
+    border:2px solid transparent
+}
+.class{
+    height:20%;
+    transition:0.5s ease-in-out;
+}
+.class:hover{
+    border-radius:15px;
+    border:2px solid #00FF99;
+    transition:0.5s ease-in-out;
+    transform: scale(1.1);
 }
 header img{
     padding:10px;
@@ -93,10 +104,7 @@ header img{
     max-width: auto;
 }
 .active{
-    text-decoration: underline;
-    text-decoration-color: #00FF99;
-    text-underline-offset: 5px;
-    text-decoration-thickness: 2px;
+
 }
 #github{
     height:35%;
