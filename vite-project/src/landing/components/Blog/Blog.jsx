@@ -1,6 +1,8 @@
 import "./Blog.css";
+import Lottie from 'lottie-react'
 import { motion, useScroll,} from "motion/react"; // eslint-disable-line no-unused-vars
 import  NotFound  from '../header/images/nf.svg';
+import Search from "./Animation - 1743603188395.json"
 import {useRef} from 'react'
 export default function Blogsite(){
     const ref = useRef(null);
@@ -17,10 +19,11 @@ return(
     <div className="Blog">#BLOG</div>
     <div className="fluid">
         <div className="coming">
-        <img src={ NotFound }></img>
+        <Lottie style={{display:"flex", justifyContent:"center", alignItems:"center"}} animationData={Search} loop={true} />
         <p>Coming Soon...</p>
         </div>
     </div>
+    <div className="footer"></div>
     </motion.div>
     </section>
 );

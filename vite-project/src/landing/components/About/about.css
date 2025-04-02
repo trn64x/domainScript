@@ -75,7 +75,8 @@ font-weight:900;
     text-decoration-thickness: 20px;
     text-underline-offset: 25px;
     z-index: 99;
-    width:100%;
+    width:fit-content;
+    margin:auto;
     transition: 0.5s ease-in-out;
 }
 #underline:hover{

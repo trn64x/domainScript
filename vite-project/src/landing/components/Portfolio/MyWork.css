@@ -98,7 +98,7 @@ flex-direction: row;
 align-items: center;
 }
 .l p{
-    font-size:20px;
+    font-size:px;
 }
 p img{
     height:1%;
@@ -139,7 +139,7 @@ button a:hover{
 }
 .item p {
     display:flex;justify-content: center;align-items: center;
-    text-align: ce;
+    text-align: start;
 }
 .containerfilters{
     display:flex;
@@ -207,14 +207,10 @@ option{
     
 }
 #a1{
-    letter-spacing: 3px;
     font-size:35px;
     line-height: normal;
     color:#00FF99;
     font-weight:900 !important;
-}
-.l p{
-    margin-left:5px;
 }
 #a2,#a3{
     font-weight:600 !important;
@@ -240,7 +236,7 @@ option{
     }
     .l p {
         min-width:0;
-        font-size:20px;
+        font-size:15px;
     }
     .l{
         height:70%;
